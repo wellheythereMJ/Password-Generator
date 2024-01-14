@@ -18,6 +18,12 @@ var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("")
 var numbers = "1234567890".split("")
 var specials = "!@#$%^&*_+".split("")
 
-
+function generatePassword(){
+  //ask user which characters to use
+var isLowercase = confirm("Do you want lowercase letters? \nOK for Yes, Cancel for No")
+var isUppercase = confirm("Do you want uppercase letters? \nOK for Yes, Cancel for No")
+var isNumbers = confirm("Do you want numbers? \nOK for Yes, Cancel for No")
+var isSpecials = confirm("Do you want special characters? \nOK for Yes, Cancel for No")
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
