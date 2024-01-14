@@ -24,6 +24,30 @@ var isLowercase = confirm("Do you want lowercase letters? \nOK for Yes, Cancel f
 var isUppercase = confirm("Do you want uppercase letters? \nOK for Yes, Cancel for No")
 var isNumbers = confirm("Do you want numbers? \nOK for Yes, Cancel for No")
 var isSpecials = confirm("Do you want special characters? \nOK for Yes, Cancel for No")
+
+//ensure chosen items are included 
+if (isLowercase) {
+  var randomCharacter = Math.floor(Math.random()*lowercase.length)
+  finalPass.push(lowercase[randomCharacter]) 
 }
+
+if (isUppercase) {
+  var randomCharacter = Math.floor(Math.random()*uppercase.length)
+  finalPass.push(lowercase[randomCharacter]) 
+}
+
+if (isNumbers) {
+  var randomCharacter = Math.floor(Math.random()*numbers.length)
+  finalPass.push(lowercase[randomCharacter]) 
+}
+
+if (isSpecials) {
+  var randomCharacter = Math.floor(Math.random()*specials.length)
+  finalPass.push(lowercase[randomCharacter]) 
+}
+
+}
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
