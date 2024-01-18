@@ -57,9 +57,11 @@ function generatePassword() {
     //add specials to user options
     
   }
-  //add if statement for if they said no to all types of characters
-  //research while loops. while final pass < user response, keep making random characters from user options
-  //return finalpass
+  //TO DO add if statement for if they said no to all types of characters
+  
+  //TO DO research while loops. while final pass < user response, keep making random characters from user options
+  
+  //TO DO return finalpass
 }
 
 
